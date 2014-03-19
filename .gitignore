@@ -1,0 +1,27 @@
+.project
+.settings
+.metadata
+.classpath
+.springBeans
+.externalToolBuilders
+.idea/
+target/
+*.iml
+dam-parent.i*
+*.log
+.checkstyle
+logs
+*pid.out.file
+# elasticsearch data
+dam-core/data/
+dam-es-client/data/
+# ANTLRWorks generated files
+dam-core/src/main/antlr3/com/aida/dam/query/output/
+# Atlassian-Plugin
+atlassian-ide-plugin.xml
+/dam-core-smoke-tests/tmp
+/dam-core-smoke-tests/data
+tmp/elasticsearch
+data/elasticsearch
+
+dam-core/tmp
