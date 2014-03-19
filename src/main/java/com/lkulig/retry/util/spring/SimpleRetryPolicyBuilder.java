@@ -1,7 +1,7 @@
-package com.lkulig.retry.util;
+package com.lkulig.retry.util.spring;
 
+import com.lkulig.retry.builder.AbstractBuildableBuilder;
 import java.util.Map;
-import com.aida.commons.builder.AbstractBuildableBuilder;
 
 public class SimpleRetryPolicyBuilder extends AbstractBuildableBuilder<SimpleRetryPolicy, SimpleRetryPolicyBuilder> {
 

@@ -1,5 +1,5 @@
-package com.lkulig.retry.util;
+package com.lkulig.retry.util.spring;
 
-import com.aida.commons.builder.Buildable;
+import com.lkulig.retry.builder.Buildable;
 
 public class ExponentialBackOffPolicy extends org.springframework.retry.backoff.ExponentialBackOffPolicy implements Buildable {}

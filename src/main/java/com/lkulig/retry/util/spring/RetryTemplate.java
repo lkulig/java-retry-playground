@@ -1,7 +1,8 @@
-package com.lkulig.retry.util;
+package com.lkulig.retry.util.spring;
 
+import com.lkulig.retry.builder.Buildable;
+import com.lkulig.retry.util.OperationRetryException;
 import org.springframework.retry.RetryCallback;
-import com.aida.commons.builder.Buildable;
 
 public class RetryTemplate extends org.springframework.retry.support.RetryTemplate implements Buildable {
 

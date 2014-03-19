@@ -1,9 +1,9 @@
-package com.lkulig.retry.util;
+package com.lkulig.retry.util.spring;
 
+import com.lkulig.retry.builder.AbstractBuildableBuilder;
 import org.springframework.retry.RetryPolicy;
 import org.springframework.retry.backoff.BackOffPolicy;
 import org.springframework.retry.policy.CompositeRetryPolicy;
-import com.aida.commons.builder.AbstractBuildableBuilder;
 
 public class RetryTemplateBuilder extends AbstractBuildableBuilder<RetryTemplate, RetryTemplateBuilder> {
 

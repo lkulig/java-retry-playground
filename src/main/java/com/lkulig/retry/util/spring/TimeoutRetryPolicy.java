@@ -1,5 +1,5 @@
-package com.lkulig.retry.util;
+package com.lkulig.retry.util.spring;
 
-import com.aida.commons.builder.Buildable;
+import com.lkulig.retry.builder.Buildable;
 
 public class TimeoutRetryPolicy extends org.springframework.retry.policy.TimeoutRetryPolicy implements Buildable {}

@@ -1,7 +1,7 @@
-package com.lkulig.retry.util;
+package com.lkulig.retry.util.spring;
 
+import com.lkulig.retry.builder.Buildable;
 import java.util.Map;
-import com.aida.commons.builder.Buildable;
 
 public class SimpleRetryPolicy extends org.springframework.retry.policy.SimpleRetryPolicy implements Buildable {
 

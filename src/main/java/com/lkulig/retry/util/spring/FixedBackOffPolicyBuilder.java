@@ -1,6 +1,6 @@
-package com.lkulig.retry.util;
+package com.lkulig.retry.util.spring;
 
-import com.aida.commons.builder.AbstractBuildableBuilder;
+import com.lkulig.retry.builder.AbstractBuildableBuilder;
 
 public class FixedBackOffPolicyBuilder extends AbstractBuildableBuilder<FixedBackOffPolicy, FixedBackOffPolicyBuilder> {
 
