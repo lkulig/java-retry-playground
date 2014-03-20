@@ -3,19 +3,16 @@ package com.lkulig.retry;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Matchers.*;
 import static org.mockito.Mockito.doThrow;
-
 import com.blogspot.nurkiewicz.asyncretry.AsyncRetryContext;
 import com.blogspot.nurkiewicz.asyncretry.RetryContext;
 import com.blogspot.nurkiewicz.asyncretry.policy.RetryPolicy;
 import com.lkulig.retry.service.FabulousBusinessService;
-
 import org.junit.Before;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 import org.mockito.stubbing.Stubber;
-
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 

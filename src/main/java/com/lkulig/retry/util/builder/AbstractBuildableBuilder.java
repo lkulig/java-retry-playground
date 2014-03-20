@@ -1,4 +1,4 @@
-package com.lkulig.retry.builder;
+package com.lkulig.retry.util.builder;
 
 public abstract class AbstractBuildableBuilder<TYPE extends Buildable, BUILDER extends AbstractBuildableBuilder<TYPE, BUILDER>> {
 

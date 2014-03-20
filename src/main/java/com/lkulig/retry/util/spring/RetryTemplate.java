@@ -1,6 +1,6 @@
 package com.lkulig.retry.util.spring;
 
-import com.lkulig.retry.builder.Buildable;
+import com.lkulig.retry.util.builder.Buildable;
 import com.lkulig.retry.util.OperationRetryException;
 import org.springframework.retry.RetryCallback;
 

@@ -30,5 +30,7 @@ public class AsyncRetryMaxRetries {
                 businessService.businessOperation();
             }
         });
+
+        System.out.println("DUPA");
     }
 }
