@@ -1,14 +1,17 @@
 package com.lkulig.retry.nurkiewicz;
 
+import static java.util.concurrent.Executors.newScheduledThreadPool;
 import static org.joda.time.DateTime.now;
+
 import com.blogspot.nurkiewicz.asyncretry.AsyncRetryExecutor;
 import com.blogspot.nurkiewicz.asyncretry.RetryContext;
 import com.blogspot.nurkiewicz.asyncretry.RetryExecutor;
 import com.blogspot.nurkiewicz.asyncretry.function.RetryRunnable;
 import com.lkulig.retry.service.BusinessService;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.util.concurrent.Executors;
+
 import java.util.concurrent.ScheduledExecutorService;
 
 public class AsyncRetryExponentialBackoff {
@@ -21,9 +24,10 @@ public class AsyncRetryExponentialBackoff {
     private static BusinessService businessService = new BusinessService();
 
     public static void main(String args[]) {
-        final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(THREAD_POOL_SIZE);
-        RetryExecutor executor = new AsyncRetryExecutor(scheduler).withMaxRetries(RETRY_COUNT).withExponentialBackoff(
-            BACKOFF, MULTIPLIER);
+        final ScheduledExecutorService scheduler = newScheduledThreadPool(THREAD_POOL_SIZE);
+        RetryExecutor executor = new AsyncRetryExecutor(scheduler)
+                .withMaxRetries(RETRY_COUNT)
+                .withExponentialBackoff(BACKOFF, MULTIPLIER);
 
         executor.doWithRetry(new RetryRunnable() {
 

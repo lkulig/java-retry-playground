@@ -85,7 +85,7 @@ public class SpringRetryImprovedTest extends AbstractUnitTest {
 
         Map<Class<? extends Throwable>, Boolean> retryFor = newHashMap();
         retryFor.put(ArrayIndexOutOfBoundsException.class, TRUE);
-        retryFor.put(IllegalArgumentException.class, FALSE);
+        retryFor.put(IllegalArgumentException.class, TRUE);
 
         RetryTemplate retryTemplate = retryTemplate()
             .withPolicies(
