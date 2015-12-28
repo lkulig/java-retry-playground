@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.ScheduledExecutorService;
+import sun.net.ftp.FtpReplyCode;
 
 public class AsyncRetryExponentialBackoff {
 
